@@ -10,6 +10,10 @@ class Main {
     int offsetChIndex = (int) ((Math.random() * (43-0)) + 0);
     char offsetCh = referenceTable.charAt(offsetChIndex);
 
+    // set the offset character
+    // String offsetCh = "B";
+    // int offsetChIndex = referenceTable.indexOf(offsetCh);
+
     // initialise the encodedText
     String encodedText = "";
     encodedText += offsetCh;
@@ -40,6 +44,7 @@ class Main {
   }
 
   public static String decode(String encodedText){
+    //initialise the decodedText
     String decodedText = "";
     
     // get the offset character 
