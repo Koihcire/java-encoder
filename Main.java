@@ -1,8 +1,4 @@
 class Main {
-
-  public int getRandomNumber(int min, int max){
-    return (int) ((Math.random() * (max-min)) + min);
-  };
   
   public static String referenceTable = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789()*+,-./";
 
