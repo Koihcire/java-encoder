@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Message {
   public String encodedText = "";
   public String decodedText = "";
@@ -13,7 +15,9 @@ public class Message {
     char offsetCh = referenceTable.charAt(offsetChIndex);
 
     // manually set the offset character
-    // String offsetCh = "B";
+    // Scanner offsetChInput = new Scanner (System.in);
+    // System.out.println("Enter offset character below: ");
+    // String offsetCh = offsetChInput.nextLine();
     // int offsetChIndex = referenceTable.indexOf(offsetCh);
 
     encodedText += offsetCh;
