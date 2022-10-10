@@ -12,12 +12,10 @@ public class Message {
     int offsetChIndex = (int) ((Math.random() * (43-0)) + 0);
     char offsetCh = referenceTable.charAt(offsetChIndex);
 
-    // set the offset character
+    // manually set the offset character
     // String offsetCh = "B";
     // int offsetChIndex = referenceTable.indexOf(offsetCh);
 
-    // initialise the encodedText
-    // String encodedText = "";
     encodedText += offsetCh;
     
     // loop thru each char in newPlaintext
@@ -46,8 +44,6 @@ public class Message {
   }
 
   public String decode(String encodedText){
-    //initialise the decodedText
-    
     // get the offset character 
     char offsetCh = encodedText.charAt(0);
     int offsetChIndex = referenceTable.indexOf(offsetCh);
