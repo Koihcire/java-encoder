@@ -14,10 +14,14 @@ public class Message {
     int offsetChIndex = (int) ((Math.random() * (43-0)) + 0);
     char offsetCh = referenceTable.charAt(offsetChIndex);
 
-    // manually set the offset character
+    // user set the offset character
     // Scanner offsetChInput = new Scanner (System.in);
     // System.out.println("Enter offset character below: ");
     // String offsetCh = offsetChInput.nextLine();
+    // int offsetChIndex = referenceTable.indexOf(offsetCh);
+
+    // hard set the offset character
+    // String offsetCh = "B";
     // int offsetChIndex = referenceTable.indexOf(offsetCh);
 
     encodedText += offsetCh;
