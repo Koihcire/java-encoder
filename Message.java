@@ -4,7 +4,7 @@ public class Message {
   public String encodedText = "";
   public String decodedText = "";
 
-  public static String referenceTable = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789()*+,-./";
+  private static String referenceTable = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789()*+,-./";
 
   public String encode(String plaintext){
     // convert plaintext to upper case
